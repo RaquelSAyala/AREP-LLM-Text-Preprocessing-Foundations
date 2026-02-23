@@ -14,7 +14,8 @@ Reading the raw text (`the-verdict.txt`) and initial preparation. LLMs require t
 ### 2. Tokenization
 Using the `tiktoken` library (Byte Pair Encoding) to split the text into tokens (subwords). This allows for efficient handling of large vocabularies and unknown words.
 
-![Tokenization Example](path/to/your/tokenization_image.png)
+<img width="687" height="102" alt="token" src="https://github.com/user-attachments/assets/35166474-cdd7-4e1d-b439-89fa57ec6a86" />
+
 *Figure 1: Output of the tokenization process showing token IDs and their decoding.*
 
 ### 3. Data Sampling (Sliding Window)
@@ -22,13 +23,15 @@ Creating input-target pairs for model training using a sliding window approach.
 
 **Experiment:** The `max_length` and `stride` parameters were modified to demonstrate how overlap significantly increases the number of training samples (from 1286 to 2571 samples) and why this helps model generalization.
 
-![Sliding Window Experiment](path/to/your/sliding_window_image.png)
+<img width="1193" height="216" alt="datos " src="https://github.com/user-attachments/assets/be43f32f-6c1c-4f86-aa87-e08d86f106b0" />
+
 *Figure 2: Experiment results comparing different stride values and the number of generated samples.*
 
 ### 4. Embeddings (Vector Representation)
 Transforming token IDs into continuous vectors (Token Embeddings) and adding positional information (Positional Embeddings). The notebook explains in detail why embeddings encode semantic meaning and their deep relationship with representation learning in neural networks.
 
-![Embeddings Tensors](path/to/your/embeddings_image.png)
+<img width="573" height="206" alt="Embeddings" src="https://github.com/user-attachments/assets/89cb7bea-bd8e-450f-8928-f4c36560196c" />
+
 *Figure 3: Shapes of the resulting tensors after applying the embedding layers.*
 
 ## Requirements and Execution
